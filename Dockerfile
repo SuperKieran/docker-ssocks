@@ -9,4 +9,7 @@ WORKDIR /ssockssrc/ssocks-0.0.14
 RUN ./configure && make && make install && rm -rf /ssockssrc
 WORKDIR /
 
+EXPOSE 1234
+EXPOSE 2345
+
 CMD ["rssocks"]
